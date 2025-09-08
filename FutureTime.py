@@ -16,7 +16,7 @@ def main():
 
   #TODO:
   #Ask user for hours
-
+moreHr = (currentHour + moreHr) % 60
   #Ask user for minutes
 moreMins = 5
 
