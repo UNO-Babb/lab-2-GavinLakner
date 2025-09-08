@@ -9,8 +9,8 @@ import datetime
 def main():
   #getting current time from system, storing to variable
   now = datetime.datetime.now()
-  currentHour = now.hour 
-  currentMinute = now.minute
+  currentHour = (now.hour -8 ) % 24
+  currentMinute = (now.minute - 4)
 
   print (currentHour, currentMinute) #this is just for checking, we should delete it later
 
@@ -18,7 +18,7 @@ def main():
   #Ask user for hours
 
   #Ask user for minutes
-
+moreMins = 5
 
 futureMins = (currentMinute + moreMins ) % 60
 extraHour = (currentMinute + moreMins ) // 60
